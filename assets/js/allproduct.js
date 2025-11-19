@@ -151,7 +151,7 @@ function renderProductDetail() {
                 <p class="text-muted lead">${product.desc}</p>
                 <hr>
                 <div class="mt-4">
-                    <button class="btn btn-primary btn-lg px-4">Contact to Order</button>
+                    <a href="contact.html" class="btn btn-primary btn-lg px-4">Back to Products</a>
                 </div>
             </div>
         </div>
