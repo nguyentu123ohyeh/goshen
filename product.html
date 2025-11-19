@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Products - GOSHEN IMP AND EXP CO., LIMITED</title>
+  <meta name="description" content="Browse our catalog of tech accessories and smart home solutions">
+  <meta name="keywords" content="products, catalog, tech accessories, smart home, goshen">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+  
+  <style>
+    .header {
+      position: fixed; 
+      top: 0;
+      left: 0;
+      bottom: auto;
+      width: 100%;
+      z-index: 997;
+      transition: all 0.5s;
+      padding: 15px 0;
+      background-color: rgba(0, 0, 0, 0.9) !important; 
+    }
+
+    /* CSS Bổ sung cho Product Grid để tương thích với JS */
+    .product-img-fixed {
+        width: 100%;
+        height: 250px; /* Chiều cao cố định cho ảnh */
+        object-fit: cover;
+        border-top-left-radius: calc(0.375rem - 1px);
+        border-top-right-radius: calc(0.375rem - 1px);
+    }
+    
+    .nav-pills .nav-link {
+        color: #333;
+        margin: 0 5px;
+        border-radius: 30px;
+        padding: 8px 20px;
+        border: 1px solid #eee;
+    }
+    
+    .nav-pills .nav-link.active {
+        background-color: var(--accent-color, #ce1212); /* Sử dụng màu chủ đạo của bạn */
+        color: #fff;
+        border-color: var(--accent-color, #ce1212);
+    }
+
+    .portfolio-btn {
+        display: inline-block;
+        padding: 8px 20px;
+        background: #f8f9fa;
+        color: #333;
+        text-decoration: none;
+        border-radius: 4px;
+        text-align: center;
+        transition: 0.3s;
+        border: 1px solid #ddd;
+    }
+
+    .portfolio-btn:hover {
+        background: #333;
+        color: #fff;
+    }
+    /* --- CẤU HÌNH HIỂN THỊ ẢNH (FULL IMAGE) --- */
+  .product-img-fixed {
+      width: 100%;
+      height: 250px;       /* Giữ chiều cao cố định để khung không bị lệch */
+      object-fit: contain; /* QUAN TRỌNG: Giúp ảnh hiển thị trọn vẹn, không bị cắt */
+      padding: 10px;       /* Thêm chút khoảng cách cho đẹp */
+      background-color: #fff; /* Nền trắng để lấp đầy khoảng trống nếu ảnh không vừa khít */
+  }
+
+  /* --- CẤU HÌNH MÀU PHÂN TRANG (MÀU CAM #c85716) --- */
+  .pagination .page-link {
+      color: #c85716; /* Màu chữ mặc định */
+      border-color: #dee2e6;
+  }
+
+  .pagination .page-link:hover {
+      color: #a04411; /* Màu khi di chuột (đậm hơn chút) */
+      background-color: #e9ecef;
+      border-color: #dee2e6;
+  }
+
+  .pagination .page-item.active .page-link {
+      background-color: #c85716; /* Nền màu cam khi đang chọn */
+      border-color: #c85716;     /* Viền màu cam */
+      color: #fff;               /* Chữ màu trắng */
+  }
+  
+  .pagination .page-link:focus {
+      box-shadow: 0 0 0 0.25rem rgba(200, 87, 22, 0.25); /* Hiệu ứng focus màu cam nhạt */
+  }
+
+  /* Màu cho nút Detail và Shop Now cũng theo tông cam */
+  .nav-pills .nav-link.active, 
+  .btn-primary {
+      background-color: #c85716 !important;
+      border-color: #c85716 !important;
+  }
+  
+  .btn-outline-dark:hover {
+      background-color: #c85716;
+      border-color: #c85716;
+      color: white;
+  }
+  </style>
+</head>
+
+<body class="product-page">
+
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl position-relative">
+
+      <div class="top-row d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <h1 class="sitename">GOSHEN IMP AND EXP CO., LIMITED</h1>
+        </a>
+
+        <div class="d-flex align-items-center">
+          <div class="social-links">
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="nav-wrap">
+      <div class="container d-flex justify-content-center position-relative">
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html#hero">Home</a></li>
+            <li><a href="index.html#about">Why Us</a></li>
+            <li><a href="index.html#features">Products</a></li>
+            <li><a href="index.html#portfolio">Catalog</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="ms-lg-3"><a href="product.html" class="btn-shop-now active">Shop Now</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </div>
+
+  </header>
+
+  <main class="main" style="margin-top: 120px;">
+
+    <section id="products" class="products section">
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">Our Catalog</span>
+        <h2>Products</h2>
+        <p>Explore our wide range of high-quality tech accessories and smart home devices.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        
+        <div class="row mb-4">
+            <div class="col-12 d-flex justify-content-center">
+                <ul class="nav nav-pills" id="product-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" data-category="all">All</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-category="phone-acc">Phone Accessories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-category="computer-acc">Computer Accessories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-category="smart-home">Smart Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-category="computer-hardware">Computer Hardware</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="product-list" class="row gy-4">
+            <div class="text-center">Loading products...</div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12 d-flex justify-content-center">
+                <nav aria-label="Page navigation">
+                    <ul class="pagination" id="pagination">
+                        </ul>
+                </nav>
+            </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container">
+      <div class="row gy-5">
+        <div class="col-lg-4">
+          <div class="footer-content">
+            <a href="index.html" class="logo d-flex align-items-center mb-4">
+              <span class="sitename">GOSHEN</span>
+            </a>
+            <p class="mb-4">GOSHEN IMP AND EXP CO., LIMITED. Your trusted partner for international trade.</p>
+            <div class="newsletter-form">
+               <form action="forms/newsletter.php" method="post" class="php-email-form">
+                <div class="input-group">
+                  <input type="email" name="email" class="form-control" placeholder="Enter your email" required="">
+                  <button type="submit" class="btn-subscribe"><i class="bi bi-send"></i></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-6">
+          <div class="footer-links">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="index.html#about"><i class="bi bi-chevron-right"></i> Why Us</a></li>
+              <li><a href="index.html#services"><i class="bi bi-chevron-right"></i> Services</a></li>
+              <li><a href="term.html"><i class="bi bi-chevron-right"></i> Terms</a></li>
+              <li><a href="privacy.html"><i class="bi bi-chevron-right"></i> Privacy</a></li>
+              <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-6">
+          <div class="footer-links">
+             <h4>Products</h4>
+            <ul>
+              <li><a href="product.html">Phone Accessories</a></li>
+              <li><a href="product.html">Computer Accessories</a></li>
+              <li><a href="product.html">Smart Home</a></li>
+              <li><a href="product.html">Computer Hardware</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="footer-contact">
+            <h4>Get in Touch</h4>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div class="contact-info">
+                <p>8/F., CHINA HONG KONG TOWER, 8-12 HENNESSY ROAD, <br>WAN CHAI, HONG KONG</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bi bi-telephone"></i>
+              </div>
+              <div class="contact-info">
+                <p>+44 7400776498</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div class="contact-info">
+                <p>gohhaishan@gmail.com</p>
+              </div>
+            </div>
+             <div class="social-links">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-whatsapp"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="copyright">
+              <p>© <span>Copyright</span> <strong class="px-1 sitename">GOSHEN IMP AND EXP CO., LIMITED</strong> <span>All Rights Reserved</span></p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="footer-bottom-links">
+              <a href="privacy.html">Privacy Policy</a>
+              <a href="term.html">Terms of Service</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  
+  <script src="assets/js/allproduct.js"></script>
+  <script src="assets/js/product.js"></script>
+
+</body>
+</html>
